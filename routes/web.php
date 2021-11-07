@@ -13,12 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Default route of laravel's project
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::view('hello', 'hello');
 
-Route::get('about', function(){
-   return view('about');
-});
+//Routes with values for the variable "pageTitle"
+Route::view('/', 'home', ['name' => 'Toni', 'pageTitle' => 'Home Page']);
+Route::view('about', 'about', ['pageTitle' => 'About Page']);
+Route::view('contact', 'contact', ['pageTitle' => 'Contact Page']);

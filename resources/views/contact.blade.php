@@ -14,7 +14,7 @@
 </nav>
 
 <h3>
-    <?php echo "About page"?>
+    <?php echo "Contact page"; ?>
 </h3>
 
 </body>

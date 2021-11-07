@@ -13,9 +13,8 @@
     </ul>
 </nav>
 
-<h3>
-    <?php echo "About page"?>
-</h3>
+<h1>Home</h1>
+Welcome to the site {{ $name ?? "Guest" }}
 
 </body>
 </html>
