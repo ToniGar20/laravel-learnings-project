@@ -18,8 +18,6 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-
-//Routes with values for the variable "pageTitle"
-Route::view('/', 'home', ['name' => 'Toni', 'pageTitle' => 'Home Page']);
-Route::view('about', 'about', ['pageTitle' => 'About Page']);
-Route::view('contact', 'contact', ['pageTitle' => 'Contact Page']);
+Route::view('/', 'home');
+Route::view('about', 'about');
+Route::view('contact', 'contact');

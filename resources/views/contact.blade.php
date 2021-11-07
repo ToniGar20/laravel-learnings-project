@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>{{ $pageTitle }}</title>
-</head>
-<body>
 
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
+@extends('layout')
 
-<h3>
-    <?php echo "Contact page"; ?>
-</h3>
-
-</body>
-</html>
+@section('title', 'Contact Page')
+@section('content')
+    <h3><?php echo "Contact page"?></h3>
+@endsection
