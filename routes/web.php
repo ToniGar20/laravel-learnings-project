@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VisitController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,8 @@ Route::view('/', 'home');
 Route::view('about', 'about');
 Route::view('contact', 'contact');
 
-Route::view('/{value}', 'visits-test');
+//Using a controller to show a URL: url, class to use, method to call
+Route::get('/{visits?}', VisitController::class,'__invoke()');
+
+
+

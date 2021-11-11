@@ -12,8 +12,6 @@
             echo "Eres la primera visita :)";
             setcookie("visits", $_COOKIE["visits"] = 1);
         }
-
-        $value = $_COOKIE["visits"];
         ?>
     </p>
 @endsection
