@@ -24,7 +24,7 @@ Route::view('about', 'about');
 Route::view('contact', 'contact');
 
 //Using a controller to show a URL: url, class to use, method to call
-Route::get('/{visits?}', VisitController::class,'__invoke()');
+Route::get('/visits', VisitController::class,'__invoke()');
 
-
-
+//Test for lang translate at this view!
+Route::view('/welcome-toni', 'welcome-translate')->name("translate-test");
