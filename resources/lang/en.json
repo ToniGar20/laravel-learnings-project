@@ -1,9 +1,15 @@
 {
-    "¡Hola!": "Piss off!",
+    "¡Hola!": "¡Hello!",
+
+    "Form": "Form",
+    "Name:": "Name",
+    "Email": "Email",
+    "Submit": "Submit",
+
     "All rights reserved.": "All rights reserved.",
     "Forbidden": "Forbidden",
     "Go Home": "Go Home",
-    "Go to page :page": "Go to page :page",
+    "Go to page": "Go to page",
     "Hello!": "Hello!",
     "If you did not create an account, no further action is required.": "If you did not create an account, no further action is required.",
     "If you did not request a password reset, no further action is required.": "If you did not request a password reset, no further action is required.",
