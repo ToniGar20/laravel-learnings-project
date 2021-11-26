@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\VisitController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Lang;
@@ -29,13 +30,11 @@ Route::view('contact', 'contact');
 Route::get('/visits', VisitController::class,'__invoke()');
 
 //2 tests for lang translate at this view!
-Route::get('/{local}/welcome-toni', function ($local) {
-    app()->setLocale($local);
-    return view('welcome-translate');
-})->name("translate-test");
+//Route::get('/{local}/welcome-toni', function ($local) {
+//    app()->setLocale($local);
+//    return view('welcome-translate');
+//})->name("translate-test");
 
-Route::get('/{lang}/form', function ($lang) {
-        echo "Idioma elegido: " . $lang ;
-        App::setLocale($lang);
-        return view('form-example');
-});
+// Second test, using a controller instead of doing php code logic on routes
+// URL path for language
+Route::get('/{lang}/form', [FormController::class, 'langSelection']);
