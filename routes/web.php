@@ -38,3 +38,7 @@ Route::get('/visits', VisitController::class,'__invoke()');
 // Second test, using a controller instead of doing php code logic on routes
 // URL path for language
 Route::get('/{lang}/form', [FormController::class, 'langSelection']);
+
+// TODO 10/12/21
+//test using a middleware
+Route::get('/middleware-test', function (){});

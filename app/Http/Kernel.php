@@ -1,4 +1,5 @@
 <?php
+// https://laravel.com/docs/8.x/middleware
 
 namespace App\Http;
 
@@ -37,6 +38,11 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+
+            // TODO 10/12/21
+            // For web, every function would display the following class
+            \App\Http\Middleware\Hola::class
+
         ],
 
         'api' => [
@@ -63,5 +69,8 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        // TODO 10/12/21
+        //Alias => middleware route ::class
+        'hola' => \App\Http\Middleware\Hola::class
     ];
 }
