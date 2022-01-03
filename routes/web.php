@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\TestController;
 use App\Http\Controllers\VisitController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Lang;
@@ -27,7 +28,9 @@ Route::view('about', 'about');
 Route::view('contact', 'contact');
 
 //Using a controller to show a URL: url, class to use, method to call
-Route::get('/visits', VisitController::class,'__invoke()');
+Route::get('/visits', VisitController::class,'__invoke');
+Route::get('/controller-test', TestController::class, '__invoke');
+
 
 //2 tests for lang translate at this view!
 //Route::get('/{local}/welcome-toni', function ($local) {
