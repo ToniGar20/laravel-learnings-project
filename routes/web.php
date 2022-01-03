@@ -23,12 +23,12 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::view('/', 'home');
-Route::view('about', 'about');
-Route::view('contact', 'contact');
+Route::view('/', 'home')->name('home');
+Route::view('about', 'about')->name('about');
+Route::view('contact', 'contact')->name('contact');
 
 //Using a controller to show a URL: url, class to use, method to call
-Route::get('/visits', VisitController::class,'__invoke');
+Route::get('/visits', VisitController::class,'__invoke')->name('visits');
 Route::get('/controller-test', TestController::class, '__invoke');
 
 
