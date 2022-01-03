@@ -32,7 +32,7 @@ Route::view('contact', 'contact')->name('contact');
 Route::get('/visits', VisitController::class,'__invoke')->name('visits');
 Route::get('/controller-test', TestController::class, '__invoke');
 
-//
+//Route to call the validation of the inputs of the form!
 Route::post('contact', [MessageController::class, 'store']);
 
 //2 tests for lang translate at this view!
