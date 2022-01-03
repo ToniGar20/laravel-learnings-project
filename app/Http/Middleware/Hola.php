@@ -14,9 +14,9 @@ class Hola
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
-    {
-        echo "Hola, esto es un middleware";
-        return $next($request);
-    }
+//    public function handle(Request $request, Closure $next)
+//    {
+//        echo "Hola, esto es un middleware";
+//        return $next($request);
+//    }
 }

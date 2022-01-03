@@ -41,7 +41,7 @@ class Kernel extends HttpKernel
 
             // TODO 10/12/21
             // For web, every function would display the following class
-            \App\Http\Middleware\Hola::class
+            // \App\Http\Middleware\Hola::class
 
         ],
 
@@ -71,6 +71,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         // TODO 10/12/21
         //Alias => middleware route ::class
-        'hola' => \App\Http\Middleware\Hola::class
+        // 'hola' => \App\Http\Middleware\Hola::class
     ];
 }

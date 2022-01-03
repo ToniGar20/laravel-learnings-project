@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\VisitController;
 use Illuminate\Support\Facades\App;
@@ -31,6 +32,8 @@ Route::view('contact', 'contact')->name('contact');
 Route::get('/visits', VisitController::class,'__invoke')->name('visits');
 Route::get('/controller-test', TestController::class, '__invoke');
 
+//
+Route::post('contact', [MessageController::class, 'store']);
 
 //2 tests for lang translate at this view!
 //Route::get('/{local}/welcome-toni', function ($local) {
@@ -44,4 +47,5 @@ Route::get('/{lang}/form', [FormController::class, 'langSelection']);
 
 // TODO 10/12/21
 //test using a middleware
-Route::get('/middleware-test', function (){});
+//Route::get('/middleware-test', function (){});
+
