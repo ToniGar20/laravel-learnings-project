@@ -45,7 +45,7 @@ Route::post('contact', [MessageController::class, 'store']);
 // URL path for language
 Route::get('/{lang}/form', [FormController::class, 'langSelection']);
 
-// TODO 10/12/21
+// TODO Middleware (10/12/21)
 //test using a middleware
 //Route::get('/middleware-test', function (){});
 

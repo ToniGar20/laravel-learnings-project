@@ -8,7 +8,7 @@ class CreateDriversTable extends Migration
 {
     /**
      * Run the migrations.
-     * TODO 16/12/21 Primera migración
+     * TODO Primera migración (16/12/21)
      *
      * @return void
      */

@@ -8,7 +8,7 @@ class CreateTeamsTable extends Migration
 {
     /**
      * Run the migrations.
-     * TODO 16/12/21 Segunda migración
+     * TODO Segunda migración (16/12/21)
      *
      * @return void
      */
