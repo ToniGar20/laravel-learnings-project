@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PhonebookController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\VisitController;
 use Illuminate\Support\Facades\App;
@@ -49,3 +50,8 @@ Route::get('/{lang}/form', [FormController::class, 'langSelection']);
 //test using a middleware
 //Route::get('/middleware-test', function (){});
 
+Route::get('phonebook', function (){
+   return view('phonebook');
+});
+//Name of the url and the controller methods to call that will add all the methods of a resource
+Route::resource('phonebook', PhonebookController::class);
